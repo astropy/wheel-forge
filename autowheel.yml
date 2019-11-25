@@ -25,7 +25,7 @@
 - package_name: astropy-healpix
   pin_numpy: true
   test_command: pytest -p no:warnings --pyargs astropy_healpix
-  test_requires: pytest-astropy astropy==3.1.2 numpy==1.15.4
+  test_requires: pytest-astropy astropy numpy
   python_versions:
     '0.5':
       - cp36
