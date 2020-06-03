@@ -2,7 +2,7 @@ jobs:
 - job: ${{ format(parameters.name) }}
   pool:
     ${{ if eq(parameters.os, 'macosx') }}:
-      vmImage: macOS 10.13
+      vmImage: macOS 10.14
     ${{ if eq(parameters.os, 'linux32') }}:
       vmImage: Ubuntu 16.04
     ${{ if eq(parameters.os, 'linux64') }}:
@@ -15,10 +15,6 @@ jobs:
     matrix:
       photutils:
         package: photutils
-      regions:
-        package: regions
-      astropy-healpix:
-        package: astropy-healpix
 
   steps:
 
@@ -40,7 +36,7 @@ jobs:
   - script: pip install git+https://github.com/joerick/cibuildwheel
     displayName: Installing developer version of cibuildwheel
 
-  - script: pip install git+https://github.com/astrofrog/autowheel.git
+  - script: pip install git+https://github.com/larrybradley/autowheel.git
     displayName: Installing autowheel
 
   - script: mkdir wheelhouse

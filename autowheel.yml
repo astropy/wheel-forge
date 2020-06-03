@@ -2,32 +2,10 @@
   pin_numpy: true
   pin_numpy_min: '1.13'
   test_command: pytest -p no:warnings --pyargs photutils
-  test_requires: pytest-astropy astropy numpy==1.15.4
+  test_requires: pytest-astropy astropy numpy==1.18.4
   python_versions:
-    '0.6':
+    '0.7.2':
       - cp35
-      - cp36
-      - cp37
-
-
-- package_name: regions
-  pin_numpy: true
-  test_command: pytest -p no:warnings --pyargs regions
-  test_requires: pytest==4.* pytest-astropy astropy==3.1.2 numpy==1.15.4
-  python_versions:
-    '0.3':
-      - cp35
-      - cp36
-      - cp37
-      - cp38
-
-
-- package_name: astropy-healpix
-  pin_numpy: true
-  test_command: pytest -p no:warnings --pyargs astropy_healpix
-  test_requires: pytest-astropy astropy numpy
-  python_versions:
-    '0.5':
       - cp36
       - cp37
       - cp38
