@@ -2,6 +2,10 @@
 
 [![Build Status](https://dev.azure.com/astropy-project/wheel-forge/_apis/build/status/astropy.wheel-forge?branchName=master)](https://dev.azure.com/astropy-project/wheel-forge/_build/latest?definitionId=1&branchName=master)
 
+### 📣 Please note
+
+This repository is now archived and no longer actively used. Wheels are now built as part of the continuous integration of each package.
+
 ### TL;DR
 
 If you are responsible for a coordinated package and have released a
